@@ -1,7 +1,7 @@
 # Quasar Property Testing
 These tests were done as part of a final project focusing on using statistical testing and ML techniques to explore potential conclusions that could come of datasets. *the basis for testing X-Ray properties versus color was simply to see if this relatonship existed, much like the exploration of testing radio-loud/quiet sources versus color.
 
-## Regression:
+## Regression
 The first test done was an attempt to create a photometric predictor for redshift. This entailed looking at our dataset in each of the four colors (u-g, g-r, r-i, i-z) in which the quasar was observed, and examining the dependency of color and the observed redshift of the quasar. Via regression, fits were made to the portion of the data with high redshifts, and were assessed in ‘goodness of fit’ tests.
 
 Using polynomial regression, from the astroML package in python, fits were made for color versus redshift plots. The fits were done in the four colors: u-g, g-r, r-i, i-z and using redshifts above 2.5. This decision was made as the result of difficulty fitting the entire plot to a model, where the issues arose in redshifts below 2.5.
